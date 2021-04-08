@@ -18,7 +18,7 @@ ax.grid()
 # SAVE the graph locally
 plt.savefig("/home/student/mycode/graphing/myGraph02PNG.png")
 # Save to "~/static"
-plt.savefig("/home/student/static/myGraph02PNG.png")       
+plt.savefig("/home/student/static/myGraph03PNG.png")       
 print("Graph created.")
 
 fig.savefig("test.png")
