@@ -1,5 +1,8 @@
+#!/user/bin/env python3
+
 from random import randint
 
+# --Player Class--
 class Player:
   def __init__(self):
     self.dice = []
@@ -11,16 +14,21 @@ class Player:
 
   def get_dice(self):
     return self.dice
+# ----
 
+# Init players 1 and 2
 player1 = Player()
 player2 = Player()
 
+# call Player class to get roll numbers
 player1.roll()
 player2.roll()
 
+# Display each player's dice rolls
 print("Player 1 rolled" + str(player1.get_dice()))
 print("Player 2 rolled" + str(player2.get_dice()))
 
+# Display which player has highest dice rolls
 if sum(player1.get_dice()) == sum(player2.get_dice()):
   print("Draw!")
 elif sum(player1.get_dice()) > sum(player2.get_dice()):

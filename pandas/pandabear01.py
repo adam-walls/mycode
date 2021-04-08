@@ -63,7 +63,7 @@ def main():
     # create a stacked bar graph
     sorted_by_gross['Gross Earnings'].head(10).plot(kind="barh")
     # save the figure as stackedbar.png
-    plt.savefig("/home/student/static/stackedbar.png", bbox_inches='tight')
+    plt.savefig("/home/student/mycode/graphing/stackedbar.png", bbox_inches='tight')
 
 if __name__ == "__main__":
     main()
