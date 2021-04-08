@@ -6,11 +6,11 @@ import matplotlib.pyplot as plt
 np.random.seed(19680801)
 
 # example data
-mu = 100  # mean of distribution
-sigma = 15  # standard deviation of distribution
-x = mu + sigma * np.random.randn(437)
+mu = 85  # mean of distribution
+sigma = 7  # standard deviation of distribution
+x = mu + sigma * np.random.randn(350)
 
-num_bins = 50
+num_bins = 45
 
 fig, ax = plt.subplots()
 
@@ -21,9 +21,9 @@ n, bins, patches = ax.hist(x, num_bins, density=True)
 y = ((1 / (np.sqrt(2 * np.pi) * sigma)) *
      np.exp(-0.5 * (1 / sigma * (bins - mu))**2))
 ax.plot(bins, y, '--')
-ax.set_xlabel('Smarts')
-ax.set_ylabel('Probability density')
-ax.set_title(r'Histogram of IQ: $\mu=100$, $\sigma=15$')
+ax.set_xlabel('It\'s a mountain!?')
+ax.set_ylabel('Decimals!')
+ax.set_title(r'Histogram, big smart: $\mu=87$, $\sigma=7$')
 
 # Tweak spacing to prevent clipping of ylabel
 fig.tight_layout()
